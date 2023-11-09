@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>JavaScript şablon Değişmezleri</h2>
+    <p> şablon değişmezleri dizelerdeki değişkenlere izin verir. </p>
+    <p id="demo"></p>
+    <p> şablon değişmezleri Internet Explorer'da desteklenmez. </p>
+
+    <script>
+        let baslik = "şablon Değişmezler";
+        let etiketler = ["şablon değişmezleri","javaScript","Yusuf"];
+
+        let html = `<h2>${baslik}</h2><ul>`;
+
+        for (const x of etiketler) {
+            html += `<li>${x}</li>`;
+        }   
+
+        html += `</ul>`;
+        document.getElementById("demo").innerHTML = html;
+    </script>
+
+</body>
+</html>
